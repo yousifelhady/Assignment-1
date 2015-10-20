@@ -11,6 +11,7 @@ public:
 	void display ();
 	void desposite ();
 	void withdraw ();
+	
 private:
 	string name;
 	string accountnumber;
@@ -59,19 +60,21 @@ void bankaccount::withdraw ()
 void bankaccount::display ()
 	{
 		cout<<endl;
-        cout<<setw(50)<<"Your Information is"<<endl;
-        cout<<setw(50)<<"Name: "<<name<<endl;
-        cout<<setw(50)<<"Account number: "<<accountnumber<<endl;
-        cout<<setw(50)<<"Balance: "<<balance<<endl;
+        cout<<setw(0)<<"Your Information is"<<endl;
+        cout<<setw(0)<<"Name: "<<name<<endl;
+        cout<<setw(0)<<"Account number: "<<accountnumber<<endl;
+        cout<<setw(0)<<"Balance: "<<balance<<endl;
     }
 
 void main ()
 {
 	int x ;
 	bankaccount b1;
+	cout <<endl;
 	b1.create();
 	b1.display();
-	cout <<"If you want to deposite, Enter ""1"" & If you want to withdraw, Enter""2""" <<endl;
+	cout <<endl;
+	cout <<"To deposite enter <""1"">, to withdraw enter <""2"">, to exit press any other value" <<endl;
 	cin >> x;
 	if (x==1)
 	{b1.desposite();
