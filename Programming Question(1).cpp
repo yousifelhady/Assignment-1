@@ -58,13 +58,13 @@ void bankaccount::withdraw ()
 	cout <<"Value after withdraw is "<< balance << endl ;
 };
 void bankaccount::display ()
-	{
+{
 		cout<<endl;
         cout<<setw(0)<<"Your Information is"<<endl;
         cout<<setw(0)<<"Name: "<<name<<endl;
         cout<<setw(0)<<"Account number: "<<accountnumber<<endl;
         cout<<setw(0)<<"Balance: "<<balance<<endl;
-    }
+};
 
 void main ()
 {
