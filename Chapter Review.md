@@ -22,7 +22,6 @@ Class function members are functions defined in class and can be called inside t
 Class data members are data types defined in class which belong only to that class and can be used inside the class functions.
 
 5.	Define a class to represent a Bank Account
-
 class bankaccount
 {
 public:
@@ -44,12 +43,12 @@ Destructor are called for releasing resources before coming out of the program l
 7.	Provide code for a constructor for the bank account class
 bankaccount::bankaccount(string n = "Name" , string accno = "Number" , float b = 0 )
 {
-		name = n ;
-		accountnumber = accno ;
-		balance = b ;
-		cout <<"Default name is: " << n << endl;
-		cout <<"Default account number is: " << accno << endl;
-		cout <<"Default balance is: " << b << endl;
+	name = n ;
+	accountnumber = accno ;
+	balance = b ;
+	cout <<"Default name is: " << n << endl;
+	cout <<"Default account number is: " << accno << endl;
+	cout <<"Default balance is: " << b << endl;
 };
 
 
