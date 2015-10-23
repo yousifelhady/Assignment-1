@@ -22,13 +22,16 @@ Person(const string & ln, const char * fn ="Heyyou")
 // the following methods display lname and fname
 void Show() const // firstname lastname format
 {
-	cout <<"Firstname then Lastname format is " << endl << fname << " " << lname ;
+	cout << fname << " " << lname ;
 	cout << endl;
 }
 void FormalShow() const // lastname, firstname format
 {
-	cout <<"Lastname then Firstname format is "<< endl << lname << " " << fname ;
-	cout << endl;
+	if (lname =="")
+	{ cout << "" ; }
+	else {
+	cout << lname << ", " << fname ;
+	cout << endl;}
 }
 };
 
